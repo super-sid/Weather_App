@@ -4,7 +4,7 @@ import Weather from "./components/Weather";
 import { FetchWeather } from "./utils/FetchWeather";
 
 export default function App() {
-  const [isLoading, setLoader] = useState(false);
+  const [isLoading, setLoader] = useState(true);
   const [temperature, setTemperature] = useState(0);
   const [weatherCondition, setWeatherCondition] = useState(null);
   const [error, setError] = useState(null);
@@ -31,13 +31,13 @@ export default function App() {
   }, []);
 
   return (
-    <View style={styles.container}>
+    <>
       {isLoading ? (
         <Text>Fetching the Weather</Text>
       ) : (
         <Weather weather={weatherCondition} temperature={temperature} />
       )}
-    </View>
+    </>
   );
 }
 
