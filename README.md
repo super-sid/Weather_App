@@ -4,7 +4,7 @@
   <br>
 </p>
 
-# React Native & Expo Starter
+# Weather App
 
 A weather app made using React Native, depending on location its behaviour changes.
 
